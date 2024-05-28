@@ -3,13 +3,14 @@ import Footer from '@/components/client/footer'
 import MainGridsHome from '@/components/client/mainGridsHome'
 import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <>
-     <CarouselHome/>
+    <div>
+      <CarouselHome/>
       <MainGridsHome/>
-      {/* <Footer/> */}
-    </>
-  );
+      <Footer/>
+    </div>
+  )
 }
 
+export default page
